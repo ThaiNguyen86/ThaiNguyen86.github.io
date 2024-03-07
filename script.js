@@ -33,7 +33,10 @@ document.getElementById('nameInput').addEventListener('keyup', function(event) {
     tick();
   }
 });  
- 
+function handleButtonClick() {
+  showGreeting();
+  tick();
+}
   
 var canvas = document.getElementById("canvas"),
     ctx = canvas.getContext("2d"),
