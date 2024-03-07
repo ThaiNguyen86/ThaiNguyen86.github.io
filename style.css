@@ -64,3 +64,13 @@ canvas{
         color-stop(0.84, rgb(23,82,145))
     );
 }
+
+@media (min-width: 640px){
+  .sm\:block{
+    display: block;
+  }
+
+  .sm\:w-1\/2{
+    width: 50%;
+  }
+}
