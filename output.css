@@ -1228,9 +1228,6 @@ video {
 }
 
 @media (min-width: 640px){
-  .sm\:w-1\/2{
-    width: 50%;
-  }
   .text-8xl {
     font-size: 3rem;
 }
