@@ -1,5 +1,17 @@
 
 
+body {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  background: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+}
+
+
 .text-white {
     color: white;
   }
@@ -17,7 +29,9 @@
   .text-6xl {
     font-size: 5rem; /* Tương đương với 24px */
   }
- 
+  .custom-line-height {
+    line-height: 2; /* Đặt line-height thành 2 lần kích thước của font chữ */
+  }
   @keyframes fall-in {
     0% {
         transform: translateY(-50px);
@@ -31,24 +45,6 @@
 
 .fall-in {
     animation: fall-in 0.5s ease forwards;
-}
-
-canvas{
-    position:absolute;top:0;left:0;
-    z-index:100;
-    background-image: linear-gradient(bottom, rgb(105,173,212) 0%, rgb(23,82,145) 84%);
-    background-image: -o-linear-gradient(bottom, rgb(105,173,212) 0%, rgb(23,82,145) 84%);
-    background-image: -moz-linear-gradient(bottom, rgb(105,173,212) 0%, rgb(23,82,145) 84%);
-    background-image: -webkit-linear-gradient(bottom, rgb(105,173,212) 0%, rgb(23,82,145) 84%);
-    background-image: -ms-linear-gradient(bottom, rgb(105,173,212) 0%, rgb(23,82,145) 84%);
-    
-    background-image: -webkit-gradient(
-        linear,
-        left bottom,
-        left top,
-        color-stop(0, rgb(105,173,212)),
-        color-stop(0.84, rgb(23,82,145))
-    );
 }
 @media (max-width: 768px){
   .text-8xl {
@@ -84,4 +80,31 @@ canvas{
 .mb-4 {
     margin-bottom: 1rem;
 }
+}
+canvas{
+    position:absolute;top:0;left:0;
+    z-index:100;
+    background-image: linear-gradient(bottom, rgb(105,173,212) 0%, rgb(23,82,145) 84%);
+    background-image: -o-linear-gradient(bottom, rgb(105,173,212) 0%, rgb(23,82,145) 84%);
+    background-image: -moz-linear-gradient(bottom, rgb(105,173,212) 0%, rgb(23,82,145) 84%);
+    background-image: -webkit-linear-gradient(bottom, rgb(105,173,212) 0%, rgb(23,82,145) 84%);
+    background-image: -ms-linear-gradient(bottom, rgb(105,173,212) 0%, rgb(23,82,145) 84%);
+    
+    background-image: -webkit-gradient(
+        linear,
+        left bottom,
+        left top,
+        color-stop(0, rgb(105,173,212)),
+        color-stop(0.84, rgb(23,82,145))
+    );
+}
+
+@media (min-width: 640px){
+  .sm\:block{
+    display: block;
+  }
+
+  .sm\:w-1\/2{
+    width: 50%;
+  }
 }
