@@ -17,14 +17,14 @@
 </style>
 </head>
 <body class="flex items-center justify-center h-screen relative">
-
+<canvas id="canvas"></canvas>
 <div class="absolute inset-0 z-10 flex items-center justify-end">
  
   <div class="fixed top-1 left-1 p-4 ">
     <input type="text" id="nameInput" placeholder="Nhập tên của bạn" class="px-8 py-4 mb-2 rounded text-4xl">
-    <button onclick="showGreeting()" class="bg-green-500 text-white px-8 py-4 ml-4 rounded text-4xl mr-10">Enter</button>
+    <button onclick="showGreeting()" onclick="tick()" class="bg-green-500 text-white px-8 py-4 ml-4 rounded text-4xl mr-10">Enter</button>
     <p id="greeting" class="text-white font-bold text-6xl mt-4 leading-relaxed"></p>
-    <canvas id="canvas"></canvas>
+    
 </div>
 
   

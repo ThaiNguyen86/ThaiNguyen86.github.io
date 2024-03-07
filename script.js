@@ -1,7 +1,12 @@
 function showGreeting() {
     var name = document.getElementById("nameInput").value;
     if (name.trim() !== "") {
-        var greeting = "Chúc " + name + " luôn vui vẻ 🌟🌟🌟 \n xinh đẹp và thành công nhaa 🌺🌺🌺";
+      var greeting = "";
+      if(name === "Vy") {
+          greeting = "Chúc " + name + " luôn vui vẻ 🌟 \n xinh đẹp và thành công trên con đường đã chọn. \n Chúc Vy tất cả 🌺🌺🌺";
+      } else {
+          greeting = "Chúc " + name + " luôn vui vẻ 🌟🌟🌟 \n xinh đẹp và thành công nhaa 🌺🌺🌺";
+      }
         var greetingElement = document.getElementById("greeting");
         greetingElement.innerHTML = "";
         for (let i = 0; i < greeting.length; i++) {
@@ -14,18 +19,20 @@ function showGreeting() {
                 greetingElement.appendChild(span);
             }
         }
+       
     } else {
         alert("Vui lòng nhập tên của bạn!");
     }
 }
 
   
-  
-  document.getElementById('nameInput').addEventListener('keyup', function(event) {
-    if (event.key === 'Enter') {
-      showGreeting();
-    }
-  });
+document.getElementById('nameInput').addEventListener('keyup', function(event) {
+  if (event.key === 'Enter' ) {
+    showGreeting();
+    tick();
+  }
+});  
+ 
   
 var canvas = document.getElementById("canvas"),
     ctx = canvas.getContext("2d"),
@@ -164,5 +171,4 @@ function tick() {
   update();
   requestAnimationFrame(tick);
 }
-tick();
 
