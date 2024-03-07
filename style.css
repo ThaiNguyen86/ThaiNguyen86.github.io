@@ -47,16 +47,16 @@ body {
 }
 @media (min-width: 320px) {
   .text-8xl {
-    font-size: 2rem;
+    font-size: 24px;
   }
   .text-4xl {
-      font-size: 1rem; /* Tương đương với 24px */
+      font-size: 18px; /* Tương đương với 24px */
   }
   .text-2xl {
-   font-size: 0.5rem; /* Tương đương với 24px */
+   font-size: 16px; /* Tương đương với 24px */
   }
  .text-6xl {
-    font-size: 1.5rem; /* Tương đương với 24px */
+    font-size: 20px; /* Tương đương với 24px */
   }
 }
 canvas{
