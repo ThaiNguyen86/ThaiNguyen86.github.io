@@ -3,9 +3,9 @@ function showGreeting() {
     if (name.trim() !== "") {
       var greeting = "";
       if(name === "Vy") {
-          greeting = "Chúc " + name + " luôn vui vẻ 🌟 \n xinh đẹp và thành công trên con đường đã chọn. \n Chúc Vy tất cả 🌺🌺🌺";
+          greeting = "Chúc " + name + " luôn vui vẻ &#x2B50; \n xinh đẹp và thành công trên con đường đã chọn. \n Chúc Vy tất cả &#x1F33A; &#x1F33A; &#x1F33A;";
       } else {
-          greeting = "Chúc " + name + " luôn vui vẻ 🌟🌟🌟 \n xinh đẹp và thành công nhaa 🌺🌺🌺";
+          greeting = "Chúc " + name + " luôn vui vẻ &#x2B50; \n xinh đẹp và thành công nhaa &#x1F33A; &#x1F33A; &#x1F33A;";
       }
         var greetingElement = document.getElementById("greeting");
         greetingElement.innerHTML = "";
