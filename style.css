@@ -45,7 +45,20 @@ body {
 .fall-in {
     animation: fall-in 0.5s ease forwards;
 }
-
+@media (max-width: 768px) {
+  .text-8xl {
+    font-size: 2rem;
+  }
+  .text-4xl {
+      font-size: 1rem; /* Tương đương với 24px */
+  }
+  .text-2xl {
+   font-size: 0.5rem; /* Tương đương với 24px */
+  }
+ .text-6xl {
+    font-size: 1.5rem; /* Tương đương với 24px */
+  }
+}
 canvas{
     position:absolute;top:0;left:0;
     z-index:100;
