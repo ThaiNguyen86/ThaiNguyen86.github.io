@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chúc mừng 8/3</title>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+<link href="styles.css" rel="stylesheet">
+<style>
+  body {
+    font-family: 'Dancing Script', cursive;
+    background-image: url('https://didongviet.vn/dchannel/wp-content/uploads/2023/02/anh-8-3-didongviet-5.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+</style>
+</head>
+<body class="flex items-center justify-center h-screen relative">
+
+<div class="absolute inset-0 z-10 flex items-center justify-end">
+ 
+  <div class="fixed top-1 left-1 p-4 ">
+    <input type="text" id="nameInput" placeholder="Nhập tên của bạn" class="px-8 py-4 mb-2 rounded text-4xl">
+    <button onclick="showGreeting()" class="bg-green-500 text-white px-8 py-4 ml-4 rounded text-4xl mr-10">Enter</button>
+    <p id="greeting" class="text-white font-bold text-6xl mt-4 leading-relaxed"></p>
+    <canvas id="canvas"></canvas>
+</div>
+
+  
+  <div class="text-white text-8xl font-bold mb-4 mr-10 text-right leading-loose">
+    Happy <br>
+    International <br>
+    Women's <br>
+    Day
+    &#x2764;&#xfe0f;
+  </div>
+  
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
