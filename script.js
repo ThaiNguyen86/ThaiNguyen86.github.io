@@ -3,7 +3,7 @@ function showGreeting() {
     if (name.trim() !== "") {
       var greeting = "";
       if(name === "Vy") {
-          greeting = "Chúc " + name + " luôn vui vẻ \n xinh đẹp và thành công trên con đường đã chọn. \n Chúc Vy tất cả";
+          greeting = "Chúc " + name + " luôn vui vẻ \n xinh đẹp và thành công trên con đường đã chọn. \n Chúc Vy tất cả &#x2764; &#xfe0f;";
       } else {
           greeting = "Chúc " + name + " luôn vui vẻ \n xinh đẹp và thành công nhaa";
           
