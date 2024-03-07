@@ -1228,11 +1228,40 @@ video {
 }
 
 @media (min-width: 640px){
-  .sm\:block{
-    display: block;
-  }
-
   .sm\:w-1\/2{
     width: 50%;
   }
+  .text-8xl {
+    font-size: 3rem;
+}
+
+.text-6xl {
+    font-size: 2rem;
+}
+
+.text-4xl {
+    font-size: 1.25rem;
+}
+
+.w-full {
+    width: 100%;
+}
+
+.p-4 {
+    padding: 1rem;
+}
+
+.px-4 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.py-2 {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.mb-4 {
+    margin-bottom: 1rem;
+}
 }
