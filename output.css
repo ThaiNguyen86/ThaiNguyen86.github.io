@@ -1227,7 +1227,7 @@ video {
   --tw-ring-color: rgb(34 197 94 / var(--tw-ring-opacity));
 }
 
-@media (min-width: 320px){
+@media (max-width: 768px){
   .text-8xl {
     font-size: 3rem;
 }
