@@ -164,6 +164,5 @@ function tick() {
   update();
   requestAnimationFrame(tick);
 }
-
 tick();
 
